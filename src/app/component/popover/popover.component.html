@@ -1,0 +1,111 @@
+
+        <!-- <ion-radio-group [(ngModel)]="coffe">
+
+          <ion-list>
+      <ion-item>
+          <img src="assets/icon/icon.jpg" alt="pic">
+        <ion-label>Whipped Cream</ion-label>
+        <ion-radio  slot="start"  value=">Whipped Cream"></ion-radio>
+      </ion-item>
+      <ion-item>
+          <ion-icon name="cafe"></ion-icon>
+          <ion-label>Nutella</ion-label>
+          <ion-radio  slot="start" value="Nutella"></ion-radio>
+        </ion-item>
+      <ion-item>
+        <ion-label>Cinnamon</ion-label>
+        <ion-radio  slot="start" value="Cinnamon"></ion-radio>
+      </ion-item>
+    
+      <ion-item>
+        <ion-label>Nutmeg</ion-label>
+        <ion-radio  slot="start" value="Nutmeg"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Caramel</ion-label>
+        <ion-radio  slot="start" value="Caramel"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Chocolate</ion-label>
+        <ion-radio  slot="start" value="Chocolate"></ion-radio>
+      </ion-item>
+    </ion-list>
+      <ion-button  (click)="presentPopover() " >Extras</ion-button>
+    </ion-radio-group> 
+ -->
+ 
+ <ion-content class="background">
+ <ion-slides>
+    <ion-slide>
+<ion-card>
+              <div class="item">
+                    <div class="img-box">
+                      <img src="assets/extras/aaa.jpg" alt="Muffin">
+                     
+                    </div>
+                    <div class="details">
+                      <h2>Chocolate Muffin</h2>
+                      <div class="price">R 7.00</div>        
+                      <ion-icon name="add-circle-outline" color="danger" (click)="orderMuffin()"></ion-icon>
+                     
+                    </div>
+                  </div>
+                </ion-card>          
+                </ion-slide>
+
+                <ion-slide>
+                  <ion-card>
+                    <div class="item">
+                          <div class="img-box">
+                            <img src="assets/extras/nut.jpg" alt="Awesome Sunglasses">
+                          </div>
+                          <div class="details">
+                            <h2>Choco Donut</h2>
+                            <div class="price">R9.00</div>
+                            <ion-icon name="add-circle-outline" color="danger" (click)="orderDog()"></ion-icon>
+                           
+                          </div>
+                        </div>
+                      </ion-card>
+                      </ion-slide>
+
+                      <ion-slide>
+                        <ion-card>
+                          <div class="item">
+                                <div class="img-box">
+                                  <img src="assets/extras/caption.jpg" alt="Pizza">
+                                </div>
+                                <div class="details">
+                                  <h2>Slice Pizza</h2>
+                                  <div class="price">R 11.00</div>
+                                  
+                                  <ion-icon name="add-circle-outline" color="danger" (click)="orderPizza()"></ion-icon>
+                                </div>
+                              </div>
+                            </ion-card>
+                            </ion-slide>
+                                 
+                      
+
+                                  <ion-slide>
+                                    <ion-card>
+                                      <div class="item">
+                                            <div class="img-box">
+                                              <img src="assets/extras/cake.jpg" alt="Pizza">
+                                            </div>
+                                            <div class="details">
+                                              <h2>Hazzy Muffin</h2>
+                                              <div class="price">R 8.50</div>
+                                             
+                                              <ion-icon name="add-circle-outline" color="danger" (click)="orderMuffin1()"></ion-icon>
+                                            </div>
+                                          </div>
+                                        </ion-card>
+                                        </ion-slide>
+                                    
+
+              </ion-slides>
+              <ion-button (click)="nav1()">Order</ion-button>
+            </ion-content>

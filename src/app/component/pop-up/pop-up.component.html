@@ -1,0 +1,47 @@
+<ion-icon name="arrow-round-back" routerLink="/menu"></ion-icon>
+<span class="day">{{date | date:'EEEE'}}&nbsp; {{date | date:'shortTime'}}</span><br>
+
+<ion-content class="background">
+
+
+<ion-card>
+        <ion-card-header>
+                <ion-card-title align="center">Coffe Orders</ion-card-title>
+              </ion-card-header>
+   
+     <ion-card-content >  
+       
+       
+        <p>{{numCoffe}} &nbsp;   {{coffeType}}</p>
+        <p>{{numCoffe1}} &nbsp;  {{coffeType1}}</p>
+        <p>{{numCoffe2}} &nbsp;  {{coffeType2}}</p>
+        <p>{{numCoffe3}} &nbsp;  {{coffeType3}}</p>
+        <p>{{numCoffe4}} &nbsp;  {{coffeType4}}</p>
+<p>Subtotal :R {{totalCoff}}</p>
+      </ion-card-content>
+      </ion-card>
+
+
+  <ion-card>
+
+        
+        <ion-card-header>
+        
+          <ion-card-title align="center">Snack Orders</ion-card-title>
+          
+        </ion-card-header>
+      
+        <ion-card-content>
+             
+        <p>{{mealType}}</p>
+        
+        <p>{{mealType1}} </p>
+        <p>{{mealType2}} </p>
+        <p>{{mealType3}} </p>
+        <p>{{mealType4}} </p>
+        </ion-card-content>
+        </ion-card>
+          
+        <ion-button (click)="Print()">Print Invoice</ion-button>
+
+</ion-content>
